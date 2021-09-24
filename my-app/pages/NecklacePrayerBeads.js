@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NumberField from '../formTypes/NumberField';
+import NumberField from '../components/formTypes/NumberField'
 
 const PrayerBeads = () => {
     return (
