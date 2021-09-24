@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { Heading, Center, Stack, Link, InputGroup, InputLeftAddon, Input } from "@chakra-ui/react"
+import { Center, Stack, Heading, Image, Link, InputGroup, InputLeftAddon, Input } from "@chakra-ui/react"
 
 const PrayerBeads = () => {
     return (
         <div>
-            <Center>
+            <Center width="100%">
                 <Stack spacing="4">
                     <Heading>Necklace of Prayer Beads</Heading>
-                    <img width="300" class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
+                    <Image boxSize="sm" class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
                     <Link href="https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads" color="red.500">https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads</Link>
                     <InputGroup size="sm">
                         <InputLeftAddon children="curing:" />
