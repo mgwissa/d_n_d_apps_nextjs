@@ -1,41 +1,39 @@
 import React from 'react';
 
-import NumberField from '../components/formTypes/NumberField'
+import { Heading, Center, Stack, Link, InputGroup, InputLeftAddon, Input } from "@chakra-ui/react"
 
 const PrayerBeads = () => {
     return (
         <div>
-            <h2>Necklace of Prayer Beads</h2>
-            <img class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
-            <div class="form-field">
-                <label className="field-label">curing:</label>
-                <NumberField />
-            </div>
-            <div class="form-field">
-                <label className="field-label">blessing:</label>
-                <NumberField />
-            </div>
-            <div class="form-field">
-                <label className="field-label">smiting:</label>
-                <NumberField />
-            </div>
-            <div class="form-field">
-                <label className="field-label">favor:</label>
-                <NumberField />
-            </div>
-            <div class="form-field">
-                <label className="field-label">summons:</label>
-                <NumberField />
-            </div>
+            <Center>
+                <Stack spacing="4">
+                    <Heading>Necklace of Prayer Beads</Heading>
+                    <img width="300" class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
+                    <Link href="https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads" color="red.500">https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads</Link>
+                    <InputGroup size="sm">
+                        <InputLeftAddon children="curing:" />
+                        <Input type="number" value="1" />
+                    </InputGroup>
+                    <InputGroup size="sm">
+                        <InputLeftAddon children="blessing:" />
+                        <Input type="number" value="1" />
+                    </InputGroup>
+                    <InputGroup size="sm">
+                        <InputLeftAddon children="smiting:" />
+                        <Input type="number" value="1" />
+                    </InputGroup>
+                    <InputGroup size="sm">
+                        <InputLeftAddon children="favor:" />
+                        <Input type="number" value="2" />
+                    </InputGroup>
+                    <InputGroup size="sm">
+                        <InputLeftAddon children="summons:" />
+                        <Input type="number" value="1" />
+                    </InputGroup>
+                </Stack>
+            </Center>
         </div>
     )
 }
-
-// curing - 1 
-// blessing - 1 
-// smiting - 0
-// favor - 1
-// favor - 0
-// summons - 1
 
 export default PrayerBeads
