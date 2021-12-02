@@ -7,6 +7,10 @@ export default function Home() {
       <Link href="/NecklacePrayerBeads">
         <Button>Necklace of Prayer Beads</Button>
       </Link>
+      <br />
+      <Link href="/FingerOfDeath">
+        <Button>Finger of Death</Button>
+      </Link>
     </div>
   )
 }

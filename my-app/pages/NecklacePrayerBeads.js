@@ -8,7 +8,7 @@ const PrayerBeads = () => {
             <Center marginBottom="10">
                 <Stack spacing="4">
                     <Heading>Necklace of Prayer Beads</Heading>
-                    <Image boxSize="sm" class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
+                    <Image width="400px" class="prayer-beads-img" src="necklace_of_prayer_beads.jpeg" alt="Necklace of Prayer Beads" />
                     <Link href="https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads" color="red.500">https://www.dndbeyond.com/magic-items/necklace-of-prayer-beads</Link>
                 </Stack>
             </Center>
